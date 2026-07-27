@@ -1,36 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GST Calculator — India, Australia & Canada | Tabutility</title>
-    <meta name="description" content="Free GST calculator for India (5%, 12%, 18%, 28%), Australia (10%), and Canada (5%/13%/15%). Add or remove GST instantly. Shows CGST and SGST breakdown for India. No sign-up." />
-    <meta name="keywords" content="gst calculator, india gst calculator, australia gst calculator, canada gst calculator, gst inclusive calculator, gst exclusive calculator, cgst sgst calculator, igst calculator, hst calculator" />
-    <link rel="canonical" href="https://gst-calculator.tabutility.com/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://gst-calculator.tabutility.com/" />
-    <meta property="og:title" content="GST Calculator — India, Australia & Canada" />
-    <meta property="og:description" content="Add or remove GST for India, Australia, and Canada instantly. Covers all GST slabs including CGST/SGST breakdown. Free, no sign-up." />
-    <meta property="og:site_name" content="Tabutility" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="GST Calculator — India, Australia & Canada" />
-    <meta name="twitter:description" content="Add or remove GST for India, Australia, and Canada instantly. Free, no sign-up." />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧾</text></svg>" />
-    <meta name="robots" content="index, follow" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-78VZWJ5B1W');
-    </script>
-    <script type="application/ld+json">
-    { "@context": "https://schema.org", "@type": "WebApplication", "name": "GST Calculator", "url": "https://gst-calculator.tabutility.com", "description": "Free GST calculator for India, Australia, and Canada. Add or remove GST instantly.", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }, "provider": { "@type": "Organization", "name": "Tabutility", "url": "https://tabutility.com" } }
-    </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GST Calculator — Tabutility</title>
+<meta name="description" content="Free GST calculator for Australia, New Zealand, Canada, India and Singapore. Add or remove GST from any amount."/>
+<meta name="keywords" content="gst calculator, australia gst, add gst, remove gst, goods and services tax calculator"/>
+<link rel="canonical" href="https://gst-calculator.tabutility.com/"/>
+<link rel="alternate" hreflang="en-AU" href="https://gst-calculator.tabutility.com/"/>
+<link rel="alternate" hreflang="x-default" href="https://gst-calculator.tabutility.com/"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇦🇺</text></svg>"/>
+<meta property="og:title" content="GST Calculator"/>
+<meta property="og:description" content="Free GST calculator for Australia, NZ, Canada, India and Singapore. Add or remove GST instantly."/>
+<meta property="og:url" content="https://gst-calculator.tabutility.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Tabutility"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GST Calculator"/>
+<meta name="twitter:description" content="Free GST calculator for Australia, NZ, Canada, India and Singapore. Add or remove GST instantly."/>
+<meta name="robots" content="index, follow"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-78VZWJ5B1W');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"GST Calculator","url":"https://gst-calculator.tabutility.com/","description":"Free GST calculator for Australia, New Zealand, Canada, India and Singapore. Add or remove GST from any amount.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Tabutility","url":"https://tabutility.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tabutility","item":"https://tabutility.com"},{"@type":"ListItem","position":2,"name":"International","item":"https://tabutility.com"},{"@type":"ListItem","position":3,"name":"GST Calculator","item":"https://gst-calculator.tabutility.com/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the Australian GST rate?","acceptedAnswer":{"@type":"Answer","text":"Australia's GST rate is 10%."}},{"@type":"Question","name":"How do I remove GST?","acceptedAnswer":{"@type":"Answer","text":"Divide the GST-inclusive amount by 1.1 (for 10% GST) to get the original amount."}},{"@type":"Question","name":"Is the GST Calculator free?","acceptedAnswer":{"@type":"Answer","text":"Yes — completely free, no sign-up needed."}},{"@type":"Question","name":"Can I use the GST Calculator on mobile?","acceptedAnswer":{"@type":"Answer","text":"Yes — works on any device."}}]}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#f1f5f9;min-height:100vh}
+nav{background:#1e293b;border-bottom:1px solid #334155;padding:14px 24px;display:flex;align-items:center;gap:16px}
+nav a{color:#94a3b8;text-decoration:none;font-size:14px}nav a:hover{color:#f1f5f9}
+nav .brand{color:#38bdf8;font-weight:700;font-size:18px}
+.ad-banner{background:#1e293b;border-bottom:1px solid #334155;padding:4px;text-align:center}
+#app{max-width:600px;margin:8px auto;padding:0 16px 40px}
+h1{font-size:26px;font-weight:800;margin:24px 0 4px;text-align:center}
+.subtitle{color:#94a3b8;text-align:center;font-size:14px;margin-bottom:24px}
+.card{background:#1e293b;border:1px solid #334155;border-radius:14px;padding:24px;margin-bottom:16px}
+.mode-tabs{display:flex;gap:0;border:1px solid #334155;border-radius:10px;overflow:hidden;margin-bottom:20px}
+.mode-tab{flex:1;padding:12px;text-align:center;cursor:pointer;font-size:14px;font-weight:600;border:none;background:#0f172a;color:#94a3b8;transition:all .2s}
+.mode-tab.active{background:#38bdf8;color:#0f172a}
+.country-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin-bottom:16px}
+.country-btn{padding:10px 8px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#94a3b8;cursor:pointer;font-size:13px;font-weight:600;text-align:center;transition:all .2s}
+.country-btn:hover,.country-btn.active{background:#38bdf8;border-color:#38bdf8;color:#0f172a}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:12px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+.form-group input{width:100%;background:#0f172a;border:1px solid #334155;color:#f1f5f9;padding:12px 16px;border-radius:8px;font-size:18px;font-weight:600}
+.form-group input:focus{outline:none;border-color:#38bdf8}
+.results{display:none;margin-top:4px}
+.result-row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.07)}
+.result-row:last-child{border-bottom:none}
+.result-row .rl{font-size:14px;color:#94a3b8}
+.result-row .rv{font-size:20px;font-weight:700;color:#f1f5f9}
+.result-row.highlight .rv{color:#38bdf8;font-size:24px}
+.result-row.highlight .rl{color:#f1f5f9;font-weight:600}
+</style>
+</head>
+<body>
+<nav><span class="brand">⚡ Tabutility</span><a href="https://tabutility.com">← All Tools</a></nav>
+<div class="ad-banner"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+<div id="app">
+  <h1>🇦🇺 GST Calculator</h1>
+  <p class="subtitle">Add or remove GST for Australia, NZ, Canada, India, Singapore and more.</p>
+
+  <div class="card">
+    <div class="mode-tabs">
+      <button class="mode-tab active" id="addTab" onclick="setMode('add')">➕ Add GST</button>
+      <button class="mode-tab" id="removeTab" onclick="setMode('remove')">➖ Remove GST</button>
+    </div>
+
+    <div style="font-size:12px;font-weight:600;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px">Select Country</div>
+    <div class="country-grid">
+      <button class="country-btn active" onclick="setCountry(10,'AUD','🇦🇺 Australia 10%',this)">🇦🇺 Australia<br><strong>10%</strong></button>
+      <button class="country-btn" onclick="setCountry(15,'NZD','🇳🇿 New Zealand 15%',this)">🇳🇿 New Zealand<br><strong>15%</strong></button>
+      <button class="country-btn" onclick="setCountry(5,'CAD','🇨🇦 Canada 5%',this)">🇨🇦 Canada<br><strong>5%</strong></button>
+      <button class="country-btn" onclick="setCountry(18,'INR','🇮🇳 India 18%',this)">🇮🇳 India<br><strong>18%</strong></button>
+      <button class="country-btn" onclick="setCountry(9,'SGD','🇸🇬 Singapore 9%',this)">🇸🇬 Singapore<br><strong>9%</strong></button>
+      <button class="country-btn" onclick="setCountry(null,'custom','Custom',this)" id="customCountryBtn">Custom</button>
+    </div>
+    <div class="form-group" id="customRateGroup" style="display:none">
+      <label>Custom GST Rate (%)</label>
+      <input type="number" id="customRate" value="10" min="0" max="100" step="0.5" oninput="calculate()"/>
+    </div>
+    <div class="form-group">
+      <label id="amountLabel">Amount (excl. GST)</label>
+      <input type="number" id="amount" placeholder="0.00" step="0.01" oninput="calculate()"/>
+    </div>
+
+    <div class="results" id="results">
+      <div class="result-row">
+        <span class="rl">Net (excl. GST)</span>
+        <span class="rv" id="netVal">$0.00</span>
+      </div>
+      <div class="result-row">
+        <span class="rl">GST Amount (<span id="rateLabel">10%</span>)</span>
+        <span class="rv" id="gstVal">$0.00</span>
+      </div>
+      <div class="result-row highlight">
+        <span class="rl">Total (incl. GST)</span>
+        <span class="rv" id="totalVal">$0.00</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:860px;margin-left:auto;margin-right:auto;margin-top:24px;margin-bottom:8px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px">Related Tools</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">
+      <a href="https://vat-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">VAT Calculator</div>
+        <div style="font-size:11px;color:#94a3b8;margin-top:2px">International</div>
+      </a>
+      <a href="https://australian-tax-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Australian Tax Calculator</div>
+        <div style="font-size:11px;color:#94a3b8;margin-top:2px">International</div>
+      </a>
+      <a href="https://sales-tax-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Sales Tax Calculator</div>
+        <div style="font-size:11px;color:#94a3b8;margin-top:2px">Finance</div>
+      </a>
+      <a href="https://percentage-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Percentage Calculator</div>
+        <div style="font-size:11px;color:#94a3b8;margin-top:2px">Math</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:860px;margin-left:auto;margin-right:auto;margin-top:8px;margin-bottom:24px;padding:0 16px">
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:20px 24px">
+    <h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px">Frequently Asked Questions</h2>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">What is the Australian GST rate?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Australia's GST rate is 10%. It applies to most goods and services sold in Australia.</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">How do I remove GST?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Divide the GST-inclusive amount by 1.1 (for 10% GST) to get the original amount. Our calculator does this automatically.</div>
+    </div>
+    <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Is this free?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — completely free, no sign-up needed.</div>
+    </div>
+    <div style="padding:14px 0">
+      <div style="font-size:14px;font-weight:600;color:#f1f5f9;margin-bottom:6px">Works on mobile?</div>
+      <div style="font-size:13px;color:#94a3b8;line-height:1.5">Yes — fully responsive and works on any device.</div>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:8px">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+<script>
+let mode = 'add';
+let currentRate = 10;
+let currentCurrency = 'AUD';
+
+function setMode(m) {
+  mode = m;
+  document.getElementById('addTab').classList.toggle('active', m === 'add');
+  document.getElementById('removeTab').classList.toggle('active', m === 'remove');
+  document.getElementById('amountLabel').textContent = m === 'add' ? 'Amount (excl. GST)' : 'Amount (incl. GST)';
+  calculate();
+}
+
+function setCountry(rate, currency, label, btn) {
+  document.querySelectorAll('.country-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const isCustom = currency === 'custom';
+  document.getElementById('customRateGroup').style.display = isCustom ? '' : 'none';
+  if (!isCustom) { currentRate = rate; currentCurrency = currency; }
+  calculate();
+}
+
+function getCurrencySymbol() {
+  const syms = {AUD:'A$',NZD:'NZ$',CAD:'C$',INR:'₹',SGD:'S$'};
+  return syms[currentCurrency] || '$';
+}
+
+function fmt(n) {
+  const sym = getCurrencySymbol();
+  return sym + n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');
+}
+
+function calculate() {
+  const isCustom = document.getElementById('customRateGroup').style.display !== 'none';
+  if (isCustom) currentRate = parseFloat(document.getElementById('customRate').value) || 10;
+  const amount = parseFloat(document.getElementById('amount').value);
+  if (isNaN(amount) || amount === 0) { document.getElementById('results').style.display = 'none'; return; }
+  const multiplier = 1 + currentRate / 100;
+  let net, gstAmt, total;
+  if (mode === 'add') {
+    net = amount; gstAmt = amount * (currentRate / 100); total = amount * multiplier;
+  } else {
+    total = amount; net = amount / multiplier; gstAmt = amount - net;
+  }
+  document.getElementById('rateLabel').textContent = currentRate + '%';
+  document.getElementById('netVal').textContent = fmt(net);
+  document.getElementById('gstVal').textContent = fmt(gstAmt);
+  document.getElementById('totalVal').textContent = fmt(total);
+  document.getElementById('results').style.display = 'block';
+}
+</script>
+</body>
 </html>

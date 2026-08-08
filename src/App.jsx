@@ -72,12 +72,12 @@ export default function App() {
       <div className="no-print" style={{ background: "#fff", borderBottom: "1px solid #e5e7eb", padding: "16px 24px" }}>
         <div style={{ maxWidth: "680px", margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <a href="https://tabutility.com" style={{ fontSize: "15px", fontWeight: "700", color: "#6366f1", textDecoration: "none" }}>⌘ Tabutility</a>
-          <button onClick={() => window.print()} style={{ padding: "8px 18px", background: "#0f172a", color: "#fff", border: "none", borderRadius: "8px", fontSize: "13px", fontWeight: "700", cursor: "pointer" }}>🖨️ Print</button>
+          <button onClick={() => window.print()} style={{ padding: "8px 18px", background: "#f8f7f4", color: "#fff", border: "none", borderRadius: "8px", fontSize: "13px", fontWeight: "700", cursor: "pointer" }}>🖨️ Print</button>
         </div>
       </div>
 
       <div style={{ maxWidth: "680px", margin: "0 auto", padding: "32px 16px" }}>
-        <h1 style={{ fontSize: "30px", fontWeight: "900", color: "#0f172a", margin: "0 0 6px" }}>GST Calculator</h1>
+        <h1 style={{ fontSize: "30px", fontWeight: "900", color: "#f8f7f4", margin: "0 0 6px" }}>GST Calculator</h1>
         <p style={{ fontSize: "15px", color: "#6b7280", margin: "0 0 24px" }}>Add or remove GST for India, Australia, and Canada instantly.</p>
 
         {/* Country selector */}
@@ -96,7 +96,7 @@ export default function App() {
             { id: "add",    label: `➕ Add ${C.taxName}`,    desc: "I have the pre-tax price" },
             { id: "remove", label: `➖ Remove ${C.taxName}`, desc: "I have the total price" },
           ].map(m => (
-            <button key={m.id} onClick={() => setMode(m.id)} style={{ flex: 1, padding: "12px", borderRadius: "9px", border: "none", cursor: "pointer", fontWeight: "700", fontSize: "14px", background: mode === m.id ? "#fff" : "transparent", color: mode === m.id ? "#0f172a" : "#6b7280", boxShadow: mode === m.id ? "0 1px 4px rgba(0,0,0,0.1)" : "none", transition: "all 0.15s" }}>
+            <button key={m.id} onClick={() => setMode(m.id)} style={{ flex: 1, padding: "12px", borderRadius: "9px", border: "none", cursor: "pointer", fontWeight: "700", fontSize: "14px", background: mode === m.id ? "#fff" : "transparent", color: mode === m.id ? "#f8f7f4" : "#6b7280", boxShadow: mode === m.id ? "0 1px 4px rgba(0,0,0,0.1)" : "none", transition: "all 0.15s" }}>
               <div>{m.label}</div>
               <div style={{ fontSize: "11px", fontWeight: "500", marginTop: "2px", color: mode === m.id ? "#6b7280" : "#9ca3af" }}>{m.desc}</div>
             </button>
@@ -121,7 +121,7 @@ export default function App() {
                 <button key={r.label} onClick={() => setRateIdx(i)}
                   style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "12px 16px", borderRadius: "10px", border: `1.5px solid ${rateIdx === i ? "#6366f1" : "#e5e7eb"}`, background: rateIdx === i ? "#f5f3ff" : "#fff", cursor: "pointer", textAlign: "left" }}>
                   <div>
-                    <span style={{ fontSize: "15px", fontWeight: "800", color: rateIdx === i ? "#6366f1" : "#0f172a" }}>{r.label}</span>
+                    <span style={{ fontSize: "15px", fontWeight: "800", color: rateIdx === i ? "#6366f1" : "#f8f7f4" }}>{r.label}</span>
                     <span style={{ fontSize: "12px", color: "#9ca3af", marginLeft: "8px" }}>{r.desc}</span>
                   </div>
                   {rateIdx === i && <span style={{ color: "#6366f1", fontWeight: "900" }}>✓</span>}
@@ -133,7 +133,7 @@ export default function App() {
 
         {/* Result */}
         {A > 0 && (
-          <div style={{ background: "linear-gradient(135deg, #0f172a, #1e3a5f)", borderRadius: "20px", padding: "28px", marginBottom: "16px", color: "#fff" }}>
+          <div style={{ background: "linear-gradient(135deg, #f8f7f4, #1e3a5f)", borderRadius: "20px", padding: "28px", marginBottom: "16px", color: "#fff" }}>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "12px", textAlign: "center", marginBottom: cgst ? "16px" : "0" }}>
               {[
                 { label: `Pre-tax (${C.taxName} excl.)`, value: `${C.currency}${fmt(net)}`, highlight: mode === "remove" },
